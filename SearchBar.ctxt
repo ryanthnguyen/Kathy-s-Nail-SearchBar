@@ -1,0 +1,7 @@
+#BlueJ class context
+comment0.params=
+comment0.target=SearchBar()
+comment1.params=s
+comment1.target=void\ searchThroughTheArray(java.lang.String)
+comment1.text=\ we\ need\ a\ method\ that\ will\ let\ user\ enter\ in\ what\ they\ want\ to\ do\ and\ then\ it\ \r\n\ will\ search\ through\ the\ database\ and\ pull\ that\ price\r\n
+numComments=2
