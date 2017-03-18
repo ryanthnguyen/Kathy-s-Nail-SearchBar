@@ -1,27 +1,29 @@
 //Ryan Nguyen
+
 public class SearchBar
 {
-    private boolean current;
-    private boolean isManicure;
-    private boolean isPedicure;
-    private boolean isFill;
-    private boolean isFullSet;
-    private int manicure = 15;
-    private int pedicure = 30;
-    private int fill = 15;
-    public SearchBar()
-    {
-        current = false;
-        isManicure = false;
-        isPedicure = false;
-        isFill = false;
-        isFullSet = false;
-    }
-    /* we need a method that will let user enter in what they want to do and then it 
-     * will search through the database and pull that price
-     */
-    public void searchThroughTheArray(String s)
-    {
-        
-    }
+	private Object[] items = new Object[5];
+	private int size = 0;
+	public Object retrieveItem(int index){
+		if (index >= 0 && index < size)
+			return items[index];
+		else
+			throw new ArrayIndexOutOfBoundsException();
+	
+	}
+	public void addItem(Object item){
+		for (int i =0; i < items.length;i++){
+			items[i] = item;
+		}
+	}
+	public Object printList(){
+		return items;
+		}
+		
+	public static void main(String[] args){
+		SearchBar newList = new SearchBar();
+		newList.addItem("manicure");
+		newList.addItem("Pedicure");
+		newList.printList();
+	}
 }
